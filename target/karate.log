@@ -7488,3 +7488,113 @@ classpath:MyObservatoryTest/feature/9DayForecast.feature:19
 {"general_situation":"Under the persistent influence of the winter monsoon, the weather will still be relatively cold and windy over the coast of southern China in the next couple of days. Meanwhile, a broad band of clouds will bring rainy weather to the region. A replenishment of the monsoon will reach the coast of Guangdong on Thursday. The weather will improve with cold mornings over the region in the latter part of this week. Temperature difference between day and night will be relatively large. The monsoon is expected to be replaced by an easterly airstream early next week, temperatures over Guangdong will rise.","bulletin_datetime":"202202011130","forecast_detail":[{"wx_icon":"62","forecast_day_of_week":3,"psr_id":2,"min_temp":14,"min_rh":80,"wx_desc":"Cloudy with a few rain patches. Cool in the morning.","wind_info":"East to northeast force 4 to 5, occasionally force 6 offshore and on high ground at first.","max_temp":16,"max_rh":95,"psr":"Medium","forecast_date":"20220202"},{"wx_icon":"62","forecast_day_of_week":4,"psr_id":1,"min_temp":14,"min_rh":80,"wx_desc":"Cloudy with a few rain patches. Temperatures falling. Cool at night.","wind_info":"North force 4 to 5.","max_temp":16,"max_rh":95,"psr":"Medium Low","forecast_date":"20220203"},{"wx_icon":"93","forecast_day_of_week":5,"psr_id":0,"min_temp":12,"min_rh":60,"wx_desc":"Mainly cloudy. Sunny periods during the day. Cold in the morning.","wind_info":"North force 4 to 5.","max_temp":17,"max_rh":90,"psr":"Low","forecast_date":"20220204"},{"wx_icon":"93","forecast_day_of_week":6,"psr_id":0,"min_temp":12,"min_rh":60,"wx_desc":"Sunny periods. Cold in the morning.","wind_info":"Northeast force 4 to 5, occasionally force 6 offshore later.","max_temp":18,"max_rh":85,"psr":"Low","forecast_date":"20220205"},{"wx_icon":"52","forecast_day_of_week":0,"psr_id":0,"min_temp":14,"min_rh":65,"wx_desc":"Mainly cloudy. Bright periods during the day. Cool in the morning.","wind_info":"East to northeast force 4 to 5, occasionally force 6 offshore and on high ground.","max_temp":18,"max_rh":85,"psr":"Low","forecast_date":"20220206"},{"wx_icon":"62","forecast_day_of_week":1,"psr_id":2,"min_temp":16,"min_rh":80,"wx_desc":"Mainly cloudy with a few rain patches.","wind_info":"East force 4 to 5, occasionally force 6 offshore at first.","max_temp":18,"max_rh":95,"psr":"Medium","forecast_date":"20220207"},{"wx_icon":"52","forecast_day_of_week":2,"psr_id":0,"min_temp":14,"min_rh":70,"wx_desc":"One or two rain patches at first. Bright periods during the day. Cool in the morning.","wind_info":"North force 4 to 5.","max_temp":17,"max_rh":95,"psr":"Low","forecast_date":"20220208"},{"wx_icon":"52","forecast_day_of_week":3,"psr_id":0,"min_temp":13,"min_rh":70,"wx_desc":"Sunny intervals. Rather cool in the morning.","wind_info":"Northeast force 4 to 5.","max_temp":17,"max_rh":85,"psr":"Low","forecast_date":"20220209"},{"wx_icon":"52","forecast_day_of_week":4,"psr_id":0,"min_temp":13,"min_rh":70,"wx_desc":"Sunny intervals. Rather cool in the morning.","wind_info":"East to northeast force 4 to 5.","max_temp":17,"max_rh":85,"psr":"Low","forecast_date":"20220210"}]}
 15:38:44.317 [pool-1-thread-2] INFO  com.intuit.karate - [print] Humidity for the day after tomorrow ( 20220203 ) is:  80 % - 95 % 
 15:38:44.730 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) classpath:MyObservatoryTest/feature/9DayForecast.feature
+18:34:15.100 [main] INFO  com.intuit.karate.Runner - using system property 'karate.env': IOS
+18:34:15.504 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+18:34:15.512 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1643711655511
+18:34:16.339 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: IOS 
+18:34:16.339 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: IOS 
+18:34:16.373 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: IOS 
+18:34:16.373 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: IOS 
+18:34:16.838 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://pda.weather.gov.hk/locspc/data/fnd_e.xml
+1 > Host: pda.weather.gov.hk
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/13.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+18:34:16.838 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > GET https://pda.weather.gov.hk/locspc/data/fnd_e.xml
+1 > Host: pda.weather.gov.hk
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/13.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+18:34:17.091 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 223
+1 < 200
+1 < Date: Tue, 01 Feb 2022 10:34:18 GMT
+1 < Server: Apache
+1 < Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+1 < Referrer-Policy: same-origin
+1 < X-Frame-Options: [SAMEORIGIN, SAMEORIGIN]
+1 < Last-Modified: Tue, 01 Feb 2022 08:34:56 GMT
+1 < Accept-Ranges: bytes
+1 < Content-Security-Policy: frame-ancestors 'self';
+1 < Content-Length: 3123
+1 < Keep-Alive: timeout=10, max=100
+1 < Connection: Keep-Alive
+1 < Content-Type: text/xml
+{"general_situation":"Under the persistent influence of the winter monsoon, the weather will still be relatively cold and windy over the coast of southern China in the next couple of days. Meanwhile, a broad band of clouds will bring rainy weather to the region. A replenishment of the monsoon will reach the coast of Guangdong on Thursday. The weather will improve with cold mornings over the region in the latter part of this week. Temperature difference between day and night will be relatively large. The monsoon is expected to be replaced by an easterly airstream early next week, temperatures over Guangdong will rise.","bulletin_datetime":"202202011630","forecast_detail":[{"wx_icon":"62","forecast_day_of_week":3,"psr_id":2,"min_temp":13,"min_rh":80,"wx_desc":"Cloudy with a few rain patches.","wind_info":"Northeast force 4 to 5, occasionally force 6 offshore and on high ground in the morning.","max_temp":16,"max_rh":95,"psr":"Medium","forecast_date":"20220202"},{"wx_icon":"62","forecast_day_of_week":4,"psr_id":1,"min_temp":13,"min_rh":80,"wx_desc":"Cloudy with a few rain patches. Temperatures falling. Rather cool at night.","wind_info":"North force 4 to 5.","max_temp":16,"max_rh":95,"psr":"Medium Low","forecast_date":"20220203"},{"wx_icon":"93","forecast_day_of_week":5,"psr_id":0,"min_temp":12,"min_rh":60,"wx_desc":"Mainly cloudy. Sunny periods during the day. Cold in the morning.","wind_info":"North force 4 to 5.","max_temp":17,"max_rh":90,"psr":"Low","forecast_date":"20220204"},{"wx_icon":"93","forecast_day_of_week":6,"psr_id":0,"min_temp":12,"min_rh":60,"wx_desc":"Sunny periods. Cold in the morning.","wind_info":"Northeast force 4 to 5, occasionally force 6 offshore later.","max_temp":18,"max_rh":85,"psr":"Low","forecast_date":"20220205"},{"wx_icon":"52","forecast_day_of_week":0,"psr_id":0,"min_temp":14,"min_rh":65,"wx_desc":"Mainly cloudy. Bright periods during the day. Cool in the morning.","wind_info":"East to northeast force 4 to 5, occasionally force 6 offshore and on high ground.","max_temp":18,"max_rh":85,"psr":"Low","forecast_date":"20220206"},{"wx_icon":"62","forecast_day_of_week":1,"psr_id":2,"min_temp":16,"min_rh":80,"wx_desc":"Mainly cloudy with a few rain patches.","wind_info":"East force 4 to 5, occasionally force 6 offshore at first.","max_temp":18,"max_rh":95,"psr":"Medium","forecast_date":"20220207"},{"wx_icon":"52","forecast_day_of_week":2,"psr_id":0,"min_temp":14,"min_rh":70,"wx_desc":"One or two rain patches at first. Bright periods during the day. Cool in the morning.","wind_info":"North force 4 to 5.","max_temp":17,"max_rh":95,"psr":"Low","forecast_date":"20220208"},{"wx_icon":"52","forecast_day_of_week":3,"psr_id":0,"min_temp":13,"min_rh":70,"wx_desc":"Sunny intervals. Rather cool in the morning.","wind_info":"Northeast force 4 to 5.","max_temp":17,"max_rh":85,"psr":"Low","forecast_date":"20220209"},{"wx_icon":"52","forecast_day_of_week":4,"psr_id":0,"min_temp":13,"min_rh":70,"wx_desc":"Sunny intervals. Rather cool in the morning.","wind_info":"East to northeast force 4 to 5.","max_temp":17,"max_rh":85,"psr":"Low","forecast_date":"20220210"}]}
+18:34:17.091 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 223
+1 < 200
+1 < Date: Tue, 01 Feb 2022 10:34:18 GMT
+1 < Server: Apache
+1 < Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+1 < Referrer-Policy: same-origin
+1 < X-Frame-Options: [SAMEORIGIN, SAMEORIGIN]
+1 < Last-Modified: Tue, 01 Feb 2022 08:34:56 GMT
+1 < Accept-Ranges: bytes
+1 < Content-Security-Policy: frame-ancestors 'self';
+1 < Content-Length: 3123
+1 < Keep-Alive: timeout=10, max=100
+1 < Connection: Keep-Alive
+1 < Content-Type: text/xml
+{"general_situation":"Under the persistent influence of the winter monsoon, the weather will still be relatively cold and windy over the coast of southern China in the next couple of days. Meanwhile, a broad band of clouds will bring rainy weather to the region. A replenishment of the monsoon will reach the coast of Guangdong on Thursday. The weather will improve with cold mornings over the region in the latter part of this week. Temperature difference between day and night will be relatively large. The monsoon is expected to be replaced by an easterly airstream early next week, temperatures over Guangdong will rise.","bulletin_datetime":"202202011630","forecast_detail":[{"wx_icon":"62","forecast_day_of_week":3,"psr_id":2,"min_temp":13,"min_rh":80,"wx_desc":"Cloudy with a few rain patches.","wind_info":"Northeast force 4 to 5, occasionally force 6 offshore and on high ground in the morning.","max_temp":16,"max_rh":95,"psr":"Medium","forecast_date":"20220202"},{"wx_icon":"62","forecast_day_of_week":4,"psr_id":1,"min_temp":13,"min_rh":80,"wx_desc":"Cloudy with a few rain patches. Temperatures falling. Rather cool at night.","wind_info":"North force 4 to 5.","max_temp":16,"max_rh":95,"psr":"Medium Low","forecast_date":"20220203"},{"wx_icon":"93","forecast_day_of_week":5,"psr_id":0,"min_temp":12,"min_rh":60,"wx_desc":"Mainly cloudy. Sunny periods during the day. Cold in the morning.","wind_info":"North force 4 to 5.","max_temp":17,"max_rh":90,"psr":"Low","forecast_date":"20220204"},{"wx_icon":"93","forecast_day_of_week":6,"psr_id":0,"min_temp":12,"min_rh":60,"wx_desc":"Sunny periods. Cold in the morning.","wind_info":"Northeast force 4 to 5, occasionally force 6 offshore later.","max_temp":18,"max_rh":85,"psr":"Low","forecast_date":"20220205"},{"wx_icon":"52","forecast_day_of_week":0,"psr_id":0,"min_temp":14,"min_rh":65,"wx_desc":"Mainly cloudy. Bright periods during the day. Cool in the morning.","wind_info":"East to northeast force 4 to 5, occasionally force 6 offshore and on high ground.","max_temp":18,"max_rh":85,"psr":"Low","forecast_date":"20220206"},{"wx_icon":"62","forecast_day_of_week":1,"psr_id":2,"min_temp":16,"min_rh":80,"wx_desc":"Mainly cloudy with a few rain patches.","wind_info":"East force 4 to 5, occasionally force 6 offshore at first.","max_temp":18,"max_rh":95,"psr":"Medium","forecast_date":"20220207"},{"wx_icon":"52","forecast_day_of_week":2,"psr_id":0,"min_temp":14,"min_rh":70,"wx_desc":"One or two rain patches at first. Bright periods during the day. Cool in the morning.","wind_info":"North force 4 to 5.","max_temp":17,"max_rh":95,"psr":"Low","forecast_date":"20220208"},{"wx_icon":"52","forecast_day_of_week":3,"psr_id":0,"min_temp":13,"min_rh":70,"wx_desc":"Sunny intervals. Rather cool in the morning.","wind_info":"Northeast force 4 to 5.","max_temp":17,"max_rh":85,"psr":"Low","forecast_date":"20220209"},{"wx_icon":"52","forecast_day_of_week":4,"psr_id":0,"min_temp":13,"min_rh":70,"wx_desc":"Sunny intervals. Rather cool in the morning.","wind_info":"East to northeast force 4 to 5.","max_temp":17,"max_rh":85,"psr":"Low","forecast_date":"20220210"}]}
+18:34:17.105 [pool-1-thread-2] INFO  com.intuit.karate - [print] Humidity for the day after tomorrow ( 20220203 ) is:  80 % - 95 % 
+18:34:17.558 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) classpath:MyObservatoryTest/feature/9DayForecast.feature
+18:38:26.220 [main] INFO  com.intuit.karate.Runner - using system property 'karate.env': IOS
+18:38:26.616 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+18:38:26.625 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1643711906623
+18:38:27.405 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: IOS 
+18:38:27.405 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: IOS 
+18:38:27.445 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: IOS 
+18:38:27.445 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: IOS 
+18:38:27.900 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://pda.weather.gov.hk/locspc/data/fnd_e.xml
+1 > Host: pda.weather.gov.hk
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/13.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+18:38:27.900 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > GET https://pda.weather.gov.hk/locspc/data/fnd_e.xml
+1 > Host: pda.weather.gov.hk
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/13.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+18:38:28.152 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 222
+1 < 200
+1 < Date: Tue, 01 Feb 2022 10:38:29 GMT
+1 < Server: Apache
+1 < Strict-Transport-Security: max-age=300; includeSubDomains; preload
+1 < Referrer-Policy: same-origin
+1 < X-Frame-Options: SAMEORIGIN
+1 < Last-Modified: Tue, 01 Feb 2022 08:34:56 GMT
+1 < Accept-Ranges: bytes
+1 < Content-Security-Policy: frame-ancestors 'self';
+1 < Content-Length: 3123
+1 < Keep-Alive: timeout=10, max=100
+1 < Connection: Keep-Alive
+1 < Content-Type: text/xml
+{"general_situation":"Under the persistent influence of the winter monsoon, the weather will still be relatively cold and windy over the coast of southern China in the next couple of days. Meanwhile, a broad band of clouds will bring rainy weather to the region. A replenishment of the monsoon will reach the coast of Guangdong on Thursday. The weather will improve with cold mornings over the region in the latter part of this week. Temperature difference between day and night will be relatively large. The monsoon is expected to be replaced by an easterly airstream early next week, temperatures over Guangdong will rise.","bulletin_datetime":"202202011630","forecast_detail":[{"wx_icon":"62","forecast_day_of_week":3,"psr_id":2,"min_temp":13,"min_rh":80,"wx_desc":"Cloudy with a few rain patches.","wind_info":"Northeast force 4 to 5, occasionally force 6 offshore and on high ground in the morning.","max_temp":16,"max_rh":95,"psr":"Medium","forecast_date":"20220202"},{"wx_icon":"62","forecast_day_of_week":4,"psr_id":1,"min_temp":13,"min_rh":80,"wx_desc":"Cloudy with a few rain patches. Temperatures falling. Rather cool at night.","wind_info":"North force 4 to 5.","max_temp":16,"max_rh":95,"psr":"Medium Low","forecast_date":"20220203"},{"wx_icon":"93","forecast_day_of_week":5,"psr_id":0,"min_temp":12,"min_rh":60,"wx_desc":"Mainly cloudy. Sunny periods during the day. Cold in the morning.","wind_info":"North force 4 to 5.","max_temp":17,"max_rh":90,"psr":"Low","forecast_date":"20220204"},{"wx_icon":"93","forecast_day_of_week":6,"psr_id":0,"min_temp":12,"min_rh":60,"wx_desc":"Sunny periods. Cold in the morning.","wind_info":"Northeast force 4 to 5, occasionally force 6 offshore later.","max_temp":18,"max_rh":85,"psr":"Low","forecast_date":"20220205"},{"wx_icon":"52","forecast_day_of_week":0,"psr_id":0,"min_temp":14,"min_rh":65,"wx_desc":"Mainly cloudy. Bright periods during the day. Cool in the morning.","wind_info":"East to northeast force 4 to 5, occasionally force 6 offshore and on high ground.","max_temp":18,"max_rh":85,"psr":"Low","forecast_date":"20220206"},{"wx_icon":"62","forecast_day_of_week":1,"psr_id":2,"min_temp":16,"min_rh":80,"wx_desc":"Mainly cloudy with a few rain patches.","wind_info":"East force 4 to 5, occasionally force 6 offshore at first.","max_temp":18,"max_rh":95,"psr":"Medium","forecast_date":"20220207"},{"wx_icon":"52","forecast_day_of_week":2,"psr_id":0,"min_temp":14,"min_rh":70,"wx_desc":"One or two rain patches at first. Bright periods during the day. Cool in the morning.","wind_info":"North force 4 to 5.","max_temp":17,"max_rh":95,"psr":"Low","forecast_date":"20220208"},{"wx_icon":"52","forecast_day_of_week":3,"psr_id":0,"min_temp":13,"min_rh":70,"wx_desc":"Sunny intervals. Rather cool in the morning.","wind_info":"Northeast force 4 to 5.","max_temp":17,"max_rh":85,"psr":"Low","forecast_date":"20220209"},{"wx_icon":"52","forecast_day_of_week":4,"psr_id":0,"min_temp":13,"min_rh":70,"wx_desc":"Sunny intervals. Rather cool in the morning.","wind_info":"East to northeast force 4 to 5.","max_temp":17,"max_rh":85,"psr":"Low","forecast_date":"20220210"}]}
+18:38:28.152 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 222
+1 < 200
+1 < Date: Tue, 01 Feb 2022 10:38:29 GMT
+1 < Server: Apache
+1 < Strict-Transport-Security: max-age=300; includeSubDomains; preload
+1 < Referrer-Policy: same-origin
+1 < X-Frame-Options: SAMEORIGIN
+1 < Last-Modified: Tue, 01 Feb 2022 08:34:56 GMT
+1 < Accept-Ranges: bytes
+1 < Content-Security-Policy: frame-ancestors 'self';
+1 < Content-Length: 3123
+1 < Keep-Alive: timeout=10, max=100
+1 < Connection: Keep-Alive
+1 < Content-Type: text/xml
+{"general_situation":"Under the persistent influence of the winter monsoon, the weather will still be relatively cold and windy over the coast of southern China in the next couple of days. Meanwhile, a broad band of clouds will bring rainy weather to the region. A replenishment of the monsoon will reach the coast of Guangdong on Thursday. The weather will improve with cold mornings over the region in the latter part of this week. Temperature difference between day and night will be relatively large. The monsoon is expected to be replaced by an easterly airstream early next week, temperatures over Guangdong will rise.","bulletin_datetime":"202202011630","forecast_detail":[{"wx_icon":"62","forecast_day_of_week":3,"psr_id":2,"min_temp":13,"min_rh":80,"wx_desc":"Cloudy with a few rain patches.","wind_info":"Northeast force 4 to 5, occasionally force 6 offshore and on high ground in the morning.","max_temp":16,"max_rh":95,"psr":"Medium","forecast_date":"20220202"},{"wx_icon":"62","forecast_day_of_week":4,"psr_id":1,"min_temp":13,"min_rh":80,"wx_desc":"Cloudy with a few rain patches. Temperatures falling. Rather cool at night.","wind_info":"North force 4 to 5.","max_temp":16,"max_rh":95,"psr":"Medium Low","forecast_date":"20220203"},{"wx_icon":"93","forecast_day_of_week":5,"psr_id":0,"min_temp":12,"min_rh":60,"wx_desc":"Mainly cloudy. Sunny periods during the day. Cold in the morning.","wind_info":"North force 4 to 5.","max_temp":17,"max_rh":90,"psr":"Low","forecast_date":"20220204"},{"wx_icon":"93","forecast_day_of_week":6,"psr_id":0,"min_temp":12,"min_rh":60,"wx_desc":"Sunny periods. Cold in the morning.","wind_info":"Northeast force 4 to 5, occasionally force 6 offshore later.","max_temp":18,"max_rh":85,"psr":"Low","forecast_date":"20220205"},{"wx_icon":"52","forecast_day_of_week":0,"psr_id":0,"min_temp":14,"min_rh":65,"wx_desc":"Mainly cloudy. Bright periods during the day. Cool in the morning.","wind_info":"East to northeast force 4 to 5, occasionally force 6 offshore and on high ground.","max_temp":18,"max_rh":85,"psr":"Low","forecast_date":"20220206"},{"wx_icon":"62","forecast_day_of_week":1,"psr_id":2,"min_temp":16,"min_rh":80,"wx_desc":"Mainly cloudy with a few rain patches.","wind_info":"East force 4 to 5, occasionally force 6 offshore at first.","max_temp":18,"max_rh":95,"psr":"Medium","forecast_date":"20220207"},{"wx_icon":"52","forecast_day_of_week":2,"psr_id":0,"min_temp":14,"min_rh":70,"wx_desc":"One or two rain patches at first. Bright periods during the day. Cool in the morning.","wind_info":"North force 4 to 5.","max_temp":17,"max_rh":95,"psr":"Low","forecast_date":"20220208"},{"wx_icon":"52","forecast_day_of_week":3,"psr_id":0,"min_temp":13,"min_rh":70,"wx_desc":"Sunny intervals. Rather cool in the morning.","wind_info":"Northeast force 4 to 5.","max_temp":17,"max_rh":85,"psr":"Low","forecast_date":"20220209"},{"wx_icon":"52","forecast_day_of_week":4,"psr_id":0,"min_temp":13,"min_rh":70,"wx_desc":"Sunny intervals. Rather cool in the morning.","wind_info":"East to northeast force 4 to 5.","max_temp":17,"max_rh":85,"psr":"Low","forecast_date":"20220210"}]}
+18:38:28.164 [pool-1-thread-2] INFO  com.intuit.karate - [print] Humidity for the day after tomorrow ( 20220203 ) is:  80 % - 95 % 
+18:38:28.586 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) classpath:MyObservatoryTest/feature/9DayForecast.feature
